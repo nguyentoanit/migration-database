@@ -11,9 +11,9 @@ For information about option:
 
 | Option                   | Description                                                                               |
 |--------------------------|-------------------------------------------------------------------------------------------|
-| **-pt** or **--path**    | Path of sql folder. Place contains sql file.Default: sql                                  |
+| **-pt** or **--path**    | Path of sql folder. Place contains sql file. Default: sql                                 |
 | **-h** or **--host**     | Specifies the host name of the machine on which the server is running. Default: localhost |
-| **-d** or **--database** | The database to use.. Default: postgres                                                   |
+| **-d** or **--database** | The database to use. Default: postgres                                                    |
 | **-u** or **--username** | User name to use when connecting to server. Default: postgres                             |
 | **-p** or **--password** | Password to use when connecting to server. Default: null                                  |
 | **-P** or **--port**     | TCP/IP port number for connection. Default: 5432                                          |
