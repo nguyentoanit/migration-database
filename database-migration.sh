@@ -9,46 +9,48 @@ password=""
 type="psql"
 port="5432"
 
+#Check flags
 while test $# -gt 0; do
-           case "$1" in
-                -pt|--path)
-                    shift
-                    path=$1
-                    shift
-                    ;;
-                -h|--host)
-                    shift
-                    host=$1
-                    shift
-                    ;;
-                -d|--database)
-                    shift
-                    database=$1
-                    shift
-                    ;;
-                -u|--username)
-                    shift
-                    username=$1
-                    shift
-                    ;;
-                -p|--password)
-                    shift
-                    password=$1
-                    shift
-                    ;;
-                -t|--type)
-                    shift
-                    type=$1
-                    shift
-                    ;;
-                -P|--port)
-                    shift
-                    port=$1
-                    shift
-                    ;;
-          esac
-  done  
+    case "$1" in
+        -pt|--path)
+            shift
+            path=$1
+            shift
+            ;;
+        -h|--host)
+            shift
+            host=$1
+            shift
+            ;;
+        -d|--database)
+            shift
+            database=$1
+            shift
+            ;;
+        -u|--username)
+            shift
+            username=$1
+            shift
+            ;;
+        -p|--password)
+            shift
+            password=$1
+            shift
+            ;;
+        -t|--type)
+            shift
+            type=$1
+            shift
+            ;;
+        -P|--port)
+            shift
+            port=$1
+            shift
+            ;;
+    esac
+done  
 
+#Go to sql folder
 cd $path
 ls *.sql > list
 
